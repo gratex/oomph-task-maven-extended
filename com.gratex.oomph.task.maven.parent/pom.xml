@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.gratex.eclipse</groupId>
+	<artifactId>com.gratex.oomph.task.maven.parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<organization>
+		<name>Gratex International, a. s.</name>
+		<url>http://www.gratex.com</url>
+	</organization>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<tycho-version>1.0.0</tycho-version>
+		<neon-repo.url>http://download.eclipse.org/releases/neon/</neon-repo.url>
+		<neon-updates-repo.url>http://download.eclipse.org/eclipse/updates/4.6/</neon-updates-repo.url>
+	</properties>
+
+	<modules>
+		<module>../com.gratex.oomph.task.maven</module>
+		<module>../com.gratex.oomph.task.maven.feature</module>
+		<module>../com.gratex.oomph.task.maven.edit</module>
+		<module>../com.gratex.oomph.task.maven.site</module>
+	</modules>
+
+	<repositories>
+		<repository>
+			<id>neon</id>
+			<url>${neon-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>neon-updates</id>
+			<url>${neon-updates-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+				<version>${tycho-version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho-version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-publisher-plugin</artifactId>
+				<version>${tycho-version}</version>
+			</plugin>
+			<plugin>
+				<!-- enable the Tycho build extension -->
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

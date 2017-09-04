@@ -1,0 +1,14 @@
+# maven target folder
+target/
+
+# eclipse folders
+.metadata/
+RemoteSystemsTempFiles/
+Servers/
+runtime-test/
+bin/
+.recommenders/
+.sonarlint/
+.settings/
+.project
+.classpath
