@@ -25,7 +25,7 @@ git pull --rebase
 $DIR/run
 
 git tag "$VERSION"
-git push --tags
+git push --all
 
 pushd $DIR/../oomph-task-maven-extended-gh-pages
 {
