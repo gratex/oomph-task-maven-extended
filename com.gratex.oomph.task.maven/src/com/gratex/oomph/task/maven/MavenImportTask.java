@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see com.gratex.oomph.task.maven.MavenPackage#getMavenImportTask()
- * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.maven' repository='https://gratex.github.io/oomph-task-maven-extended/repository' installableUnits='com.gratex.oomph.task.maven.feature.group'"
+ * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.maven' repository='https://gratex.github.io/oomph-task-maven-extended/repository' installableUnits='com.gratex.oomph.task.maven.feature.feature.group'"
  *        annotation="http://www.eclipse.org/oomph/setup/ValidTriggers triggers='STARTUP MANUAL'"
  * @generated
  */

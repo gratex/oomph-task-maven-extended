@@ -250,7 +250,7 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage
   {
     String source = "http://www.eclipse.org/oomph/setup/Enablement";
     addAnnotation(mavenImportTaskEClass, source, new String[] { "variableName", "p2.maven", "repository",
-        "https://gratex.github.io/oomph-task-maven-extended/repository", "installableUnits", "com.gratex.oomph.task.maven.feature.group" });
+        "https://gratex.github.io/oomph-task-maven-extended/repository", "installableUnits", "com.gratex.oomph.task.maven.feature.feature.group" });
   }
 
   /**
