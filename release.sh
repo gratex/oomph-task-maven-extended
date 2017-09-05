@@ -25,7 +25,7 @@ git pull --rebase
 $DIR/run
 
 git tag "$VERSION"
-git push --all
+git push --follow-tags
 
 pushd $DIR/../oomph-task-maven-extended-gh-pages
 {
@@ -38,7 +38,7 @@ pushd $DIR/../oomph-task-maven-extended-gh-pages
     git add -A
     git commit -m "release $VERSION"
     git tag -a -m "release $VERSION" "$VERSION"
-    git push --all
+    git push --follow-tags
 } && {
     popd
 }
