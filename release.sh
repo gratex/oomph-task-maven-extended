@@ -22,7 +22,7 @@ fi
 git pull --rebase
 
 # build
-$DIR/run
+$DIR/build.sh
 
 git tag "$VERSION"
 git push --follow-tags
