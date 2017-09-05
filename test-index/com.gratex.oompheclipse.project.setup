@@ -5,7 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:maven="http://www.gratex.com/oomph/task/maven/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-    xsi:schemaLocation="http://www.gratex.com/oomph/task/maven/1.0 http://www.gratex.com/oomph/task/maven/schemas/Maven-1.0.ecore"
+    xsi:schemaLocation="http://www.gratex.com/oomph/task/maven/1.0 https://raw.githubusercontent.com/gratex/oomph-task-maven-extended/master/com.gratex.oomph.task.maven/model/Maven-1.0.ecore"
     name="test"
     label="Test m2 estended">
   <stream name="master">

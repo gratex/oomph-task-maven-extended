@@ -28,8 +28,8 @@
    </license>
 
    <url>
-      <update label="%updateSiteName" url="http://download.gratex.com/oomph/task/maven/updates"/>
-      <discovery label="%updateSiteName" url="http://download.gratex.com/oomph/task/maven/updates"/>
+      <update label="%updateSiteName" url="https://gratex.github.io/oomph-task-maven-extended/repository"/>
+      <discovery label="%updateSiteName" url="https://gratex.github.io/oomph-task-maven-extended/repository"/>
    </url>
 
    <plugin
