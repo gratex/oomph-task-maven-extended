@@ -27,7 +27,7 @@ git tag $VERSION
 git push --tags
 git push
 
-pushd $DIR/../oomph-task-maven-etended-gh-pages
+pushd $DIR/../oomph-task-maven-extended-gh-pages
 {
     git reset HEAD --hard
     git clean -dfx
