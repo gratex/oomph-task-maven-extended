@@ -32,6 +32,7 @@ pushd $DIR/../oomph-task-maven-extended-gh-pages
     git reset HEAD --hard
     git clean -dfx
     git pull
+    mkdir -p repository
     rm -rf repository/*
     cp -r $DIR/com.gratex.oomph.task.maven.site/target/repository/* repository/
     git add -A
