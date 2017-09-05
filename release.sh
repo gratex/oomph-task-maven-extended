@@ -37,8 +37,8 @@ pushd $DIR/../oomph-task-maven-extended-gh-pages
     cp -r $DIR/com.gratex.oomph.task.maven.site/target/repository/* repository/
     git add -A
     git commit -m "release $VERSION"
-    git tag "$VERSION"
-    git push --tags
+    git tag -a -m "release $VERSION" "$VERSION"
+    git push --all
 } && {
     popd
 }
