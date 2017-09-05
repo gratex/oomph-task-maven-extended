@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see com.gratex.oomph.task.maven.MavenFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='http://www.gratex.com/oomph/task/maven/schemas/Maven-1.0.ecore'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='https://raw.githubusercontent.com/gratex/oomph-task-maven-extended/master/com.gratex.oomph.task.maven/model/Maven-1.0.ecore'"
  * @generated
  */
 public interface MavenPackage extends EPackage

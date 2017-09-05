@@ -214,7 +214,7 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage
         !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
-    createResource("http://www.gratex.com/oomph/task/maven/schemas/Maven-1.0.ecore");
+    createResource("https://raw.githubusercontent.com/gratex/oomph-task-maven-extended/master/com.gratex.oomph.task.maven/model/Maven-1.0.ecore");
 
     // Create annotations
     // http://www.eclipse.org/emf/2002/Ecore
@@ -236,7 +236,8 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage
   protected void createEcoreAnnotations()
   {
     String source = "http://www.eclipse.org/emf/2002/Ecore";
-    addAnnotation(this, source, new String[] { "schemaLocation", "http://www.gratex.com/oomph/task/maven/schemas/Maven-1.0.ecore" });
+    addAnnotation(this, source, new String[] { "schemaLocation",
+        "https://raw.githubusercontent.com/gratex/oomph-task-maven-extended/master/com.gratex.oomph.task.maven/model/Maven-1.0.ecore" });
   }
 
   /**
@@ -248,8 +249,8 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage
   protected void createEnablementAnnotations()
   {
     String source = "http://www.eclipse.org/oomph/setup/Enablement";
-    addAnnotation(mavenImportTaskEClass, source, new String[] { "variableName", "p2.maven", "repository", "http://download.gratex.com/oomph/task/maven/updates",
-        "installableUnits", "com.gratex.oomph.task.maven.feature.group" });
+    addAnnotation(mavenImportTaskEClass, source, new String[] { "variableName", "p2.maven", "repository",
+        "https://gratex.github.io/oomph-task-maven-extended/repository", "installableUnits", "com.gratex.oomph.task.maven.feature.group" });
   }
 
   /**
