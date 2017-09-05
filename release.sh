@@ -5,7 +5,7 @@ set -o errexit
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-NEXT_VERSION=$(git tag -l *.*.* | sort -t'.' -k3rn -k2rn | head -1 | gawk -F"." '{$NF+=1}{print $0RT}' OFS="." ORS="")
+NEXT_VERSION=$(git tag --sort=v:refname | tail -1 | gawk -F"." '{$NF+=1}{print $0RT}' OFS="." ORS="")
 
 read -p "Release version: " -e -i "$NEXT_VERSION" VERSION
 
