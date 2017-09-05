@@ -11,7 +11,7 @@
   <stream name="master">
     <setupTask
         xsi:type="maven:MavenImportTask"
-        projectNameTemplate="[artifactId]-[parentDirName]">
+        projectNameTemplate="[artifactId] [[version:^.*-(.*)$:]]">
       <sourceLocator
           rootFolder="/home/UX/jkovalux/git/aladin/upm2-pvzp-deps"
           locateNestedProjects="true"/>

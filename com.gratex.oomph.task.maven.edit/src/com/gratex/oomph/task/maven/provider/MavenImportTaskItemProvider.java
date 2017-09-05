@@ -65,8 +65,7 @@ public class MavenImportTaskItemProvider extends SetupTaskItemProvider
   protected void addProjectNameTemplatePropertyDescriptor(Object object)
   {
     itemPropertyDescriptors.add(createItemPropertyDescriptor(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-        getString("_UI_MavenImportTask_projectNameTemplate_feature"),
-        getString("_UI_PropertyDescriptor_description", "_UI_MavenImportTask_projectNameTemplate_feature", "_UI_MavenImportTask_type"),
+        getString("_UI_MavenImportTask_projectNameTemplate_feature"), getString("_UI_MavenImportTask_projectNameTemplate_description"),
         MavenPackage.Literals.MAVEN_IMPORT_TASK__PROJECT_NAME_TEMPLATE, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
   }
 

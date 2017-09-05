@@ -13,7 +13,8 @@
       publicationLocation="/com.gratex.oomph.task.maven/model/Maven-1.0.ecore">
     <genClasses ecoreClass="Maven.ecore#//MavenImportTask">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maven.ecore#//MavenImportTask/sourceLocators"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maven.ecore#//MavenImportTask/projectNameTemplate"/>
+      <genFeatures createChild="false" propertyDescription="Import project name template. Supports place holders: [artifactId] [groupId] [version] [version:regexp:]"
+          ecoreFeature="ecore:EAttribute Maven.ecore#//MavenImportTask/projectNameTemplate"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
