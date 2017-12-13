@@ -4,7 +4,7 @@
 # Feature
 
 The standard oomph maven task uses default project name template logic.
-This oomph task extends the project name template logic and adds the ability to extract parts from groupId,artifactId or version and use them as part of imported project name.
+This oomph task extends the project name template logic and adds the ability to extract parts from version and use them as part of imported project name.
 
 Following example demonstrates usage of the task. It will import maven projects and create workspace project names with template: [artifactId] [[version:^.*-(.*)$:]].
 In this case it will extract last part after '-' from version string.
