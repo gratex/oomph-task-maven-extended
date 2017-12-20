@@ -40,5 +40,5 @@ Library with feature2
 ```
 
 After oomph maven import the workspace will contain two projects: 
-* test feature1
-* test feature2
+* test [feature1]
+* test [feature2]
